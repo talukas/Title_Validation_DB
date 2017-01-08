@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite">
+<listeners>
+<listener class-name="net.sf.testng.databinding.TestAnnotationTransformer" />
+</listeners>
+  <test name="Title Validation">
+  <parameter name="csv_id" value="csv_id"/>
+  <parameter name="csv_url" value="csv_url"/>
+  <parameter name="csv_title_expected" value="csv_title_expected"/>
+    <classes>
+      <class name="core.DBTest"/>
+    </classes>
+  </test> <!-- Title Validation -->
+</suite> <!-- TestNG Suite -->
